@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  box-sizing: border-box
+}
+
+
+
+.intro {
+    min-height: 70vh;
+    text-align: center;
+    background-color: #f5f5f5;
+    background: linear-gradient(rgba(27, 32, 44, 0.623), rgba(21, 27, 49, 0.603)),
+    url(../Imagenes/Img/Proyectos_Imagen_Hero.jpg);
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    color: #f5f5f5;
+}
+
+.intro h1 {
+  font-size: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.intro p {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+.miami {
+ background: linear-gradient(rgba(63, 104, 199, 0.671), rgba(21, 27, 49, 0)),
+     url('../Imagenes/Img/Proyectos_Imagen1.jpg'); /* Imagen de fondo comentada */
+     background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.panama {
+ background: linear-gradient(rgba(63, 104, 199, 0.671), rgba(21, 27, 49, 0)),
+    url('../Imagenes/Img/Proyectos_Imagen3.jpg'); /* Imagen de fondo comentada */
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lisboa {
+  background: linear-gradient(rgba(63, 104, 199, 0.671), rgba(21, 27, 49, 0)),
+    url('../Imagenes/Img/Proyectos_Imagen2.jpg'); /* Imagen de fondo comentada */
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banners {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.banner {
+    position: relative;
+  height: 65vh;
+  width: 92%;
+  margin: 2rem auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &:hover .contentUno{
+    opacity: 0;
+  }
+
+  &:hover .content{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contentUno{
+    transition: opacity 0.5s ease;
+    position: absolute;
+    h2{
+          font-size: 4rem;
+
+    }
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.4);
+  display: grid;
+  place-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  padding: 20px 40px;
+   transform: translateY(-30px);
+   transition: all 0.5s ease;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  h2{
+    font-size: 3rem;
+
+  }
+
+  p {
+  margin-top: 20px;
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+
+  button {
+    max-width: 20vw;
+  margin: auto;
+  background-color: #00123a;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #c2865a;
+}/*# sourceMappingURL=Intro.module.css.map */
+}
+
+
+.creaTuFuturo {
+    height: 45vh;
+  background: linear-gradient(rgba(34, 42, 77, 0.575), rgba(19, 24, 44, 0.623)),
+    url('../Imagenes/Img/Proyectos_Imagen4.jpg'); /* Imagen de fondo comentada */
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+
+  h2{
+    color: #ddd;
+    font-size: 3.5rem;
+
+  }
+}
+
+.membresia {
+  text-align: center;
+  padding: 40px 20px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.logoMembresia {
+  width: 150px;
+  height: 80px;
+  margin: 10px auto 0;
+  background-color: #ddd; /* solo para marcar el lugar del logo */
+  border-radius: 8px;
+}

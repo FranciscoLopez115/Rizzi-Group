@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.intro {
+  background-color: #f7f7f7;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  gap: 50px;
+  height: auto;
+  padding: 5em 0;
+  margin: auto;
+}
+
+.imagen {
+  flex: 1;
+  background-color: #ececec;
+  border-radius: 25px;
+  display: grid;
+  place-content: center;
+  height: 90%;
+}
+
+.casaImg {
+  width: 120%;
+  border-radius: 12px;
+  margin: -200px 0;
+  margin-left: -80px;
+}
+
+.texto {
+  height: 90%;
+  flex: 1;
+  color: #00123a;
+}
+
+.texto h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #00123a;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.texto span {
+  color: #c2865a;
+}
+
+.texto p {
+  margin-top: 20px;
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.boton {
+  margin-top: 25px;
+  background-color: #00123a;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.boton:hover {
+  background-color: #c2865a;
+} /*# sourceMappingURL=Intro.module.css.map */
