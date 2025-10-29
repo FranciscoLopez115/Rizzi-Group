@@ -5,8 +5,6 @@ import Inversiones from '../../components/Inversiones/Inversiones';
 import PorqueElegirnos from '../../components/Equipo/PorqueElegirnos';
 import SobreAngela from '../../components/Equipo/SobreAngela';
 import ContactoForm from '../../pages/Contacto/Contacto';
-import WhatsAppButton from "../../components/WhatsAppButton/WhatsAppButton";
-
 export default function Home() {
   return (
     <>
@@ -20,7 +18,6 @@ export default function Home() {
       <SobreAngela /> 
     
       <ContactoForm /> {/* Formulario de contacto */}
-      <WhatsAppButton /> {/* Botón flotante */}
     </>
   )
 }
