@@ -80,3 +80,94 @@
   }
 
 }
+
+
+/* ----------------- MEDIA QUERIES RESPONSIVE ----------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .testimoniosSection {
+    padding: 60px 20px;
+
+    h2 {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonioCard {
+      flex-direction: column;
+      gap: 40px;
+      max-width: 90%;
+    }
+
+    .testimonioContenido {
+      padding: 30px 25px;
+      width: 100%;
+
+      .Icono_Estrellas {
+        width: 220px;
+        top: -30px;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        color: #444;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+      }
+    }
+
+    .flecha img {
+      width: 45px;
+    }
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .testimoniosSection {
+    padding: 40px 15px;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      line-height: 2.4rem;
+    }
+
+    .testimonioCard {
+      flex-direction: column;
+      gap: 30px;
+      max-width: 100%;
+      margin: 20px auto;
+    }
+
+    .testimonioContenido {
+      padding: 25px 20px;
+      border-radius: 12px;
+
+      .Icono_Estrellas {
+        width: 180px;
+        top: -25px;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+        text-align: left;
+      }
+    }
+
+    .flecha img {
+      width: 40px;
+    }
+  }
+}

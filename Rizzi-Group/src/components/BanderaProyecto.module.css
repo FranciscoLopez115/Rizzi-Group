@@ -1,12 +1,13 @@
 .bandera {
+  margin-left: -10px;
   position: fixed;
-  top: 40%;
-  right: 0;
+  bottom: 8rem;
+  left: 0;
   background-color: #1c73b8;
   color: white;
   font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 10px 0 0 10px;
+  padding: 20px 20px;
+  border-radius: 0px 0 20px 0px;
   cursor: pointer;
   z-index: 1000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -15,5 +16,5 @@
 
 .bandera:hover {
   background-color: #155b8a;
-  transform: translateX(-5px);
+  transform: translateX(5px);
 }

@@ -102,62 +102,13 @@
     max-width: 200px;
   }
 }
-/* --- Responsive (Mobile) --- */
 @media (max-width: 768px) {
-  
-  /* Contenedor Principal */
-  .servicios {
-    padding: 2rem 10px; /* Reducir padding horizontal */
-    width: 95%; /* Ocupar un poco más de ancho de pantalla */
-    margin: 40px auto; /* Reducir margen vertical */
-  }
-
-  /* Título de la Sección */
-  .servicios h2 {
-    font-size: 2.5rem; /* Reducir el tamaño del título */
-    margin-bottom: 1.5rem;
-  }
-
-  /* Contenedor de Tarjetas */
   .grid {
-    flex-direction: column; /* Apilar las tarjetas */
+    flex-direction: column;
     align-items: center;
-    gap: 2rem; /* Reducir un poco el espacio entre tarjetas */
   }
-
-  /* Cada Tarjeta (Card) */
   .card {
-    /* Permitir que la tarjeta ocupe el ancho máximo sin restricciones de flex */
-    flex: 1 1 100%; 
-    max-width: 100%; /* Permitir que ocupe todo el ancho disponible */
-    margin-bottom: 0; /* Eliminar el margen inferior si ya tenemos gap */
-    padding: 1.5rem 1rem; /* Reducir el padding interno */
-    
-    /* Deshabilitar la animación de scale en dispositivos táctiles */
-    transition: none; 
+    max-width: 90%;
+    margin-bottom: 1rem;
   }
-  
-  .card:hover {
-      /* Quitar la animación de scale y el transform en mobile/touch */
-      transform: none; 
-      box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15), -4px -4px 12px rgba(255, 255, 255, 0.6); 
-  }
-  
-  /* Imagen/Ícono de la Card */
-  .cardImg {
-      width: 30%; /* Reducir un poco el tamaño del ícono */
-  }
-
-  /* Título de la Card */
-  .card h3 {
-      font-size: 1.2rem; /* Reducir tamaño del título */
-      margin-bottom: 0.8rem;
-  }
-
-  /* Texto de Párrafo de la Card */
-  .card p {
-      font-size: 1rem; /* Reducir tamaño del texto */
-      max-width: 100%;
-      margin-bottom: 1rem;
-  }
-}
+}/*# sourceMappingURL=Servicios.module.css.map */

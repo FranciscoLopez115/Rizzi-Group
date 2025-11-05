@@ -83,78 +83,93 @@
 }
 .contacto p {
   font-weight: 500;
-}/*# sourceMappingURL=Contacto.module.css.map */
+}
 
-/* --- Responsive (Mobile) --- */
-@media (max-width: 768px) {
-  
-  /* Contenedor Principal de la Sección */
+/* ----------------- MEDIA QUERIES RESPONSIVE ----------------- */
+/* Tablets */
+@media (max-width: 992px) {
   .contacto {
-    padding: 3rem 1rem; /* Reducir padding horizontal */
+    padding: 3rem 1.5rem;
   }
-
-  /* Título Principal */
   .contacto h2 {
-    font-size: 2.5rem; /* Reducir el tamaño del título principal */
-    text-align: center; /* Centrar el título en móvil */
+    font-size: 2.8rem;
+    text-align: center;
   }
-
-  /* Subtítulo */
   .contacto h3 {
-    font-size: 1.4rem; /* Reducir el subtítulo */
-    margin-top: 0.5rem;
+    font-size: 1.4rem;
   }
-  
-  /* Certificación/Texto de info */
-  .contacto .certi {
-    font-size: 1.4rem; /* Reducir el texto de certificación */
-    margin-bottom: 3rem; /* Reducir el margen inferior */
-  }
-
-  /* Contenedor Flex de Formulario e Info */
   .contacto .formContainer {
-    flex-direction: column; /* Apilar las columnas verticalmente */
-    align-items: center; /* Centrar el contenido apilado */
-  }
-  
-  /* Sección de Información de Contacto */
-  .contacto .info {
-    /* Ocupar todo el ancho y eliminar padding horizontal excesivo */
-    width: 100%; 
-    padding-left: 0; 
-    text-align: center; /* Centrar el contenido de info */
-    margin-bottom: 2rem; /* Añadir espacio debajo de la sección de info */
-  }
-  
-  /* Ajuste del Logo dentro de la Sección Info */
-  .contacto .info .logo {
-    justify-content: center; /* Centrar el logo */
-    margin: 0 auto; /* Eliminar margen negativo y centrar */
-    min-width: unset; /* Permitir que el ancho se ajuste */
-  }
-  .contacto .info .logo img {
-    width: 40%; /* Reducir el ancho del logo */
-    max-width: 150px;
-  }
-  
-  /* Contenedor de Datos (Dirección, Teléfono) */
-  .contacto .datos {
-    display: flex; /* Cambiar a flex para centrar mejor o forzar columna si es necesario */
     flex-direction: column;
     align-items: center;
+    gap: 2.5rem;
   }
-
-  /* Párrafos de Datos y Texto General */
+  .contacto .info, .contacto .form {
+    width: 100%;
+    padding: 1rem;
+  }
+  .contacto .info .logo img {
+    width: 60%;
+    margin: auto;
+    display: block;
+  }
   .contacto p {
-    font-size: 1rem; /* Reducir el tamaño de la fuente */
-    padding-top: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
   }
-  
-  /* Botones */
   .contacto button {
-    width: 100%; /* Permitir que el botón ocupe todo el ancho */
-    max-width: 200px; /* Limitar el ancho máximo si es necesario */
+    width: 60%;
     font-size: 1.1rem;
     padding: 1rem;
   }
+  input,
+  textarea {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    border-radius: 30px;
+  }
 }
+/* Celulares */
+@media (max-width: 600px) {
+  .contacto {
+    padding: 2rem 1rem;
+  }
+  .contacto h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .contacto h3 {
+    font-size: 1.2rem;
+  }
+  .contacto .formContainer {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+  .contacto .formContainer form {
+    width: 100% !important;
+  }
+  .contacto .info, .contacto .form {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .contacto .info .logo img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contacto .datos p {
+    font-size: 0.95rem;
+  }
+  .contacto input,
+  .contacto textarea {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+  .contacto button {
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+  ._form_1h0sm_8 {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=Contacto.module.css.map */

@@ -484,136 +484,217 @@
   to {
     transform: translateX(-50%);
   }
-}/*# sourceMappingURL=SobreNosotros.module.css.map */
-
-/* 📱📱 MEDIA QUERIES ADICIONALES */
-
-/* Tablet (hasta 1024px) */
+}
+/* ------------------------------------------------------ */
+/* ✅ AJUSTES RESPONSIVE – TABLET Y CELULAR */
+/* ------------------------------------------------------ */
+/* TABLET (max-width: 1024px) */
 @media (max-width: 1024px) {
+  /* Banner principal */
+  .bannerSobre {
+    height: auto;
+    padding: 4rem 1rem;
+  }
   .bannerSobre h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
   }
-
   .bannerSobre p {
     font-size: 1.1rem;
+    width: 90%;
+    line-height: 1.7;
   }
-
+  /* Perfil Angela */
   .perfilAngela .container {
     flex-direction: column;
-    padding: 2rem;
-    text-align: center;
+    padding: 0 1rem;
+    gap: 3rem;
   }
-
-  .container .texto {
-    text-align: center;
+  .perfilAngela .imagen img {
+    max-width: 90%;
+    border-radius: 10px;
   }
-
-  .container .texto h3 {
-    font-size: 1.8rem;
-  }
-
   .perfilAngela h2 {
     font-size: 2.5rem;
   }
-
+  .perfilAngela .container .texto h3 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
   .perfilAngela p {
     font-size: 1.1rem;
+    line-height: 1.6;
   }
-}
-
-/* Móviles grandes (hasta 768px) */
-@media (max-width: 768px) {
-  .bannerSobre {
-    height: 60vh;
-    background-position: 50% 30%;
-    padding: 0 1rem;
-  }
-
-  .bannerSobre h1 {
-    font-size: 2.2rem;
-  }
-
-  .bannerSobre p {
-    font-size: 1rem;
-    line-height: 1.6rem;
-  }
-
-  .perfilAngela {
-    padding: 40px 15px;
-  }
-
-  .perfilAngela .imagen img {
-    max-width: 90%;
-  }
-
-  .perfilAngela h2 {
-    font-size: 2rem;
-  }
-
   .perfilAngela .botonZoom {
-    padding: 15px 25px;
     font-size: 1.1rem;
+    padding: 15px 25px;
+    border-radius: 25px;
   }
-
+  /* Visión y Misión */
+  .visionMisionUnica {
+    background-attachment: scroll;
+    padding: 4rem 1rem;
+    background-position: center;
+  }
   .visionMisionUnica .textos {
     flex-direction: column;
-    text-align: center;
+    gap: 2rem;
+    width: 95%;
   }
-
   .visionMisionUnica h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
-
   .visionMisionUnica p {
     font-size: 1rem;
+    line-height: 1.5;
   }
-}
-
-/* Celulares pequeños (hasta 480px) */
-@media (max-width: 480px) {
-  .bannerSobre {
-    height: 50vh;
+  /* Certificaciones */
+  .certificacionesSection h2 {
+    font-size: 2.4rem;
   }
-
-  .bannerSobre h1 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+  .certificacionesSection .container {
+    flex-direction: column;
+    align-items: center;
   }
-
-  .bannerSobre p {
-    width: 90%;
-    font-size: 0.95rem;
+  .certificacionesSection .iconos img {
+    width: 40px;
+    height: 40px;
   }
-
-  .perfilAngela h2 {
-    font-size: 1.6rem;
+  .textoCertificaciones {
+    text-align: center;
   }
-
-  .perfilAngela p {
-    font-size: 0.95rem;
-  }
-
-  .perfilAngela .botonZoom {
-    width: 100%;
-    padding: 12px;
-  }
-
-  .certificacionesSection h2,
+  /* Premios y Honores */
   .premiosHonoresSection h2 {
-    font-size: 2rem;
-    padding: 1rem;
+    font-size: 2.5rem;
   }
-
+  .honoresGrid {
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: none; /* 🚫 quitar desplazamiento animado */
+  }
+  .gridContainerInner {
+    animation: none; /* 🚫 desactivar la animación */
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .honorItem {
+    width: 45%;
+    margin-bottom: 2rem;
+  }
   .honorItem img {
-    height: 100px;
+    height: 120px;
   }
-
   .honorItem h3 {
+    font-size: 0.9rem;
+  }
+  .honorItem p {
     font-size: 0.8rem;
   }
-
-  .honorItem p {
-    font-size: 0.7rem;
-  }
 }
+/* CELULAR (max-width: 767px) */
+@media (max-width: 767px) {
+  /* Banner */
+  .bannerSobre {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+  .bannerSobre h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .bannerSobre p {
+    font-size: 1rem;
+    width: 90%;
+  }
+  /* Perfil Angela */
+  .perfilAngela {
+    width: 95%;
+    padding: 40px 10px;
+  }
+  .perfilAngela .container {
+    flex-direction: column;
+    padding: 0;
+    gap: 2rem;
+  }
+  .perfilAngela .imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .perfilAngela h2 {
+    font-size: 2rem;
+  }
+  .perfilAngela .container .texto h3 {
+    font-size: 1.4rem;
+  }
+  .perfilAngela p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .perfilAngela .botonZoom {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+  /* Visión y Misión */
+  .visionMisionUnica {
+    padding: 3rem 1rem;
+    background-position: center;
+  }
+  .visionMisionUnica .textos {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .visionMisionUnica h2 {
+    font-size: 2rem;
+  }
+  .visionMisionUnica p {
+    font-size: 0.95rem;
+  }
+  /* Certificaciones */
+  .certificacionesSection {
+    transform: scale(0.9);
+    transform-origin: top center;
+  }
+  .certificacionesSection h2 {
+    font-size: 1.8rem;
+  }
+  .certificacionesSection .certificacionesLogos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap; /* mantiene todo en una línea si entra */
+  }
+  .certificacionesLogos img {
+    width: 40px;
+    height: 40px;
+  }
+  .textoCertificaciones {
+    transform: scale(0.95);
+    font-size: 0.9rem;
+  }
+  /* Premios y Honores */
+  .premiosHonoresSection {
+    width: 96%;
+    aspect-ratio: 1/1;
+    padding: 10px;
+  }
+  .honoresGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+  }
+  .honorItem img {
+    height: 45px;
+    margin-bottom: 5px;
+  }
+  .honorItem h3 {
+    font-size: 0.75rem;
+  }
+  .honorItem p {
+    font-size: 0.65rem;
+  }
+  .secundario {
+    display: none;
+  }
+}/*# sourceMappingURL=SobreNosotros.module.css.map */

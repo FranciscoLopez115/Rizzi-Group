@@ -255,32 +255,32 @@ export default function SobreNosotros() {
        <img src={LogoPremio6} alt="Premio 6"/>
         
       </div>
-      <div className={styles.honorItem}>
+      <div className={`${styles.honorItem} ${styles.secundario}`}>
         <img src={LogoPremio1} alt="Premio 1" /> 
         
       </div>
 
-      <div className={styles.honorItem}>
+      <div className={`${styles.honorItem} ${styles.secundario}`}>
        <img src={LogoPremio2} alt="Premio 2" />
         
       </div>
 
-      <div className={styles.honorItem}>
+      <div className={`${styles.honorItem} ${styles.secundario}`}>
          <img src={LogoPremio3} alt="Premio 3" />
        
       </div>
 
-      <div className={styles.honorItem}>
+      <div className={`${styles.honorItem} ${styles.secundario}`}>
          <img src={LogoPremio4} alt="Premio 4" />
         
       </div>
 
-      <div className={styles.honorItem}>
+      <div className={`${styles.honorItem} ${styles.secundario}`}>
          <img src={LogoPremio5} alt="Premio 5" /> 
        
       </div>
 
-      <div className={styles.honorItem}>
+      <div className={`${styles.honorItem} ${styles.secundario}`}>
        <img src={LogoPremio6} alt="Premio 6"/>
         
       </div>

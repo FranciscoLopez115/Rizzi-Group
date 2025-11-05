@@ -79,9 +79,87 @@
 .boton:hover {
   background-color: #c2865a;
 } 
-/* Responsive */
-@media (max-width: 768px) {
+/* ---------------------------------------------------------------- */
+/* 📱💻 MEDIA QUERIES RESPONSIVE */
+/* ---------------------------------------------------------------- */
+/* TABLET (hasta 1024px) */
+@media (max-width: 1024px) {
   .contenedor {
     flex-direction: column;
+    width: 95%;
+    padding: 3em 0;
+    gap: 2rem;
+  }
+  .imagen {
+    width: 100%;
+    flex: none;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .imgInversiones {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0;
+    display: block;
+  }
+  .texto {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .texto h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+  .texto p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  .boton {
+    font-size: 1.1rem;
+    padding: 15px 25px;
+  }
+}
+/* CELULAR (hasta 767px) */
+@media (max-width: 767px) {
+  .contenedor {
+    flex-direction: column;
+    width: 100%;
+    padding: 2em 0;
+    gap: 1.5rem;
+  }
+  .imagen {
+    width: 100%;
+    flex: none;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  .imgInversiones {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0;
+    display: block;
+  }
+  .texto {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .texto h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .texto p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+  .boton {
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 25px;
   }
 }/*# sourceMappingURL=Inversiones.module.css.map */

@@ -20,14 +20,14 @@ export default function IntroProyectos() {
           <h2 dangerouslySetInnerHTML={{ __html: tituloHtml }} />
           
           <p>
-            {t('intro.descripcion')}
+            {t('introProyectos.descripcion')}
           </p>
           <button className={styles.boton}>
             <a 
               href="/contacto" // ⬅️ CAMBIO REALIZADO AQUÍ: apunta a la ruta de la página de contacto
               style={{ color: 'inherit', textDecoration: 'none' }}
             >
-              {t('intro.boton')}
+              {t('introProyectos.boton')}
             </a>
           </button>
         </div>
@@ -35,7 +35,7 @@ export default function IntroProyectos() {
           <div className={styles.imagen}>
             {<img 
               src={casaImg} 
-              alt={t('intro.alt_imagen')} // Clave para alt
+              alt={t('introProyectos.alt_imagen')} // Clave para alt
               className={styles.casaImg} 
             />}
           </div>

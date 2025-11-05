@@ -3,8 +3,10 @@ import { NavLink, Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import Logo_Rizzi_Color_Header from "../Imagenes/Logos/Logo_Rizzi_Color_Header.png";
 import LanguageButton from "../LanguageButton"; // Botón para cambiar idioma
+import { useTranslation } from 'react-i18next' // Importar useTranslation
 
 export default function Navbar() {
+  const { t } = useTranslation() // Usar el hook de traducción
   const [menuAbierto, setMenuAbierto] = useState(false);
 
   const toggleMenu = () => {
@@ -41,7 +43,7 @@ export default function Navbar() {
             }
             onClick={() => setMenuAbierto(false)}
           >
-            Home
+            {t('nav.home')}
           </NavLink>
 
           <NavLink
@@ -51,7 +53,7 @@ export default function Navbar() {
             }
             onClick={() => setMenuAbierto(false)}
           >
-            Proyectos
+            {t('nav.proyectos')}
           </NavLink>
 
           <NavLink
@@ -61,7 +63,7 @@ export default function Navbar() {
             }
             onClick={() => setMenuAbierto(false)}
           >
-            Sobre Nosotros
+            {t('nav.sobre')}
           </NavLink>
 
           <NavLink
@@ -71,12 +73,15 @@ export default function Navbar() {
             }
             onClick={() => setMenuAbierto(false)}
           >
-            Contacto
+            {t('nav.contacto')}
           </NavLink>
 
-          {/* Botón idioma también dentro del menú en mobile */}
-          <LanguageButton />
+          <div className={styles.LanguageHamb}><LanguageButton /></div>
+
         </nav>
+
+                  {/* Botón idioma también dentro del menú en mobile */}
+          <div className={styles.LanguageCompu}><LanguageButton /></div>
       </div>
     </header>
   );

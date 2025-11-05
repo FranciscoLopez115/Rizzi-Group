@@ -41,7 +41,32 @@
   "intro": {
     "alt_imagen": "Casa moderna",
     "titulo_html": "La forma más <span>flexible</span> <br />de invertir.",
-    "descripcion": "Con sus más de 25 años de experiencia, Rizzi Group presenta una propuesta innovadora que revoluciona la forma de acceder a una propiedad en Estados Unidos. Con un esquema mucho más dinámico y flexible, pensado especialmente para las familias latinoamericanas, se abre la puerta a un estilo de vida global, con beneficios que van más allá de la compra tradicional de bienes raíces. Rizzi Group te invita: ¡Vive la experiencia!",
+    "descripcion": "Con sus más de 25 años de experiencia, Rizzi Group presenta una propuesta innovadora que revoluciona la forma de acceder a una propiedad en cualquier parte del mundo. Con su equipo de expertos en diversas areas y un esquema dinámico y flexible, pensado especialmente para las familias latinoamericanas, se abre la puerta a un estilo de vida global, con beneficios que van más allá de la compra tradicional de bienes raíces. Rizzi Group te invita: ¡Vive la experiencia!",
     "boton": "Contáctanos"
+  },
+  "introProyectos": {
+    "alt_imagen": "Mapa",
+    "titulo_html": "Inversiones a nivel <span>Internacional</span>",
+    "descripcion": "En Rizzi Group creemos en construir futuro. Desarrollamos proyectos y opciones de inversión en vivienda y construcción en distintos lugares del mundo, ofreciendo financiamiento y soluciones flexibles para que cada inversor sea parte del crecimiento y la creación de nuevos espacios.",
+    "boton": "Contáctanos"
+  },
+    "servicios": {
+    "titulo": "Nuestros Servicios",
+    "servicio1": "Propiedades",
+    "descripcion1": "Desde la búsqueda hasta la compra, te guiamos y asesoramos en cada paso para encontrar y adquirir tu propiedad ideal.",
+    "servicio2": "Inversiones Internacionales",
+    "descripcion2": "Brindamos acceso a múltiples alternativas de inversión inmobiliaria en diferentes países, con proyectos sólidos y adaptados a tu medida.",
+    "servicio3": "Asesoramiento Legal",
+    "descripcion3": "Te brindamos apoyo legal para invertir en el exterior con seguridad, asesorando desde la compraventa hasta las obligaciones fiscales.",
+    "servicio4": "Financiación",
+    "descripcion4": "Disponemos de líneas de crédito y financiamiento respaldadas por nuestro socio estratégico Sun Tree Finance, garantizando solidez y confianza.",
+    "boton": "Consulte con nuestro experto de confianza"
+  },
+    "nav": {
+    "home": "Home",
+    "proyectos": "Proyectos",
+    "sobre": "Sobre Nosotros",
+    "contacto": "Contacto"
   }
+  
 }

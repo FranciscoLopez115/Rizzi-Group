@@ -37,7 +37,7 @@
 
 .miami {
  background: linear-gradient(rgba(63, 104, 199, 0.671), rgba(21, 27, 49, 0)),
-     url('../Imagenes/Img/Proyectos_Imagen1.jpg'); /* Imagen de fondo comentada */
+     url('../Imagenes/Img/Proyectos_Imagen1.jpg');
      background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,7 +45,7 @@
 
 .panama {
  background: linear-gradient(rgba(63, 104, 199, 0.671), rgba(21, 27, 49, 0)),
-    url('../Imagenes/Img/Proyectos_Imagen3.jpg'); /* Imagen de fondo comentada */
+    url('../Imagenes/Img/Proyectos_Imagen3.jpg');
     background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,7 +53,7 @@
 
 .lisboa {
   background: linear-gradient(rgba(63, 104, 199, 0.671), rgba(21, 27, 49, 0)),
-    url('../Imagenes/Img/Proyectos_Imagen2.jpg'); /* Imagen de fondo comentada */
+    url('../Imagenes/Img/Proyectos_Imagen2.jpg');
     background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,7 +155,7 @@ button:hover {
 .creaTuFuturo {
     height: 45vh;
   background: linear-gradient(rgba(34, 42, 77, 0.575), rgba(19, 24, 44, 0.623)),
-    url('../Imagenes/Img/Proyectos_Imagen4.jpg'); /* Imagen de fondo comentada */
+    url('../Imagenes/Img/Proyectos_Imagen4.jpg');
     background-position: 50% 0%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -180,6 +180,126 @@ button:hover {
   width: 150px;
   height: 80px;
   margin: 10px auto 0;
-  background-color: #ddd; /* solo para marcar el lugar del logo */
+  background-color: #ddd;
   border-radius: 8px;
+}
+
+
+/* ------------------------------------------------ */
+/* 🧩 MEDIA QUERIES PARA TABLET Y CELULAR */
+/* ------------------------------------------------ */
+
+/* 📱 Celulares */
+@media (max-width: 600px) {
+
+  .intro {
+    min-height: 60vh;
+    padding: 2rem 1rem;
+    background-position: 50% 50%;
+  }
+
+  .intro h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 0 1rem;
+  }
+
+  .banners {
+    gap: 30px;
+  }
+
+  .banner {
+    height: 45vh;
+    width: 95%;
+    border-radius: 20px;
+  }
+
+  .contentUno h2,
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .content button {
+    max-width: 60%;
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .creaTuFuturo {
+    height: auto;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .creaTuFuturo h2 {
+    font-size: 2rem;
+  }
+
+  .membresia {
+    font-size: 0.9rem;
+    padding: 20px 10px;
+  }
+
+  .logoMembresia {
+    width: 100px;
+    height: 60px;
+  }
+}
+
+/* 💻 Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .intro {
+    min-height: 65vh;
+    padding: 3rem 2rem;
+    background-position: 50% 45%;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+
+  .banner {
+    height: 55vh;
+    width: 90%;
+    border-radius: 30px;
+  }
+
+  .content h2 {
+    font-size: 2.4rem;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .content button {
+    max-width: 40%;
+    font-size: 1.1rem;
+    padding: 14px 25px;
+  }
+
+  .creaTuFuturo h2 {
+    font-size: 2.8rem;
+  }
+
+  .membresia {
+    font-size: 1rem;
+  }
 }
